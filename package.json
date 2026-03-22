@@ -1,0 +1,58 @@
+{
+  "name": "onelibrary-connect",
+  "version": "1.0.0",
+  "description": "Read and query rekordbox OneLibrary (exportLibrary.db) SQLCipher databases from Pioneer DJ devices",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "clean": "rm -rf dist",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run clean && npm run build && npm test"
+  },
+  "keywords": [
+    "rekordbox",
+    "onelibrary",
+    "exportLibrary",
+    "sqlcipher",
+    "sqlite",
+    "pioneer",
+    "alphatheta",
+    "dj",
+    "cdj",
+    "usb"
+  ],
+  "author": "Chris Le <chris@triodemusic.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "better-sqlite3-multiple-ciphers": "^12.5.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^22.15.29",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.16"
+  },
+  "overrides": {
+    "rollup": ">=4.59.0"
+  }
+}
