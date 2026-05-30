@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.1.2
+
+- chore: drop transient peer:true flags from lock file
+
+
 ## v1.1.0
 
 - fix(ci): publish no longer fails when several connect repos release together
