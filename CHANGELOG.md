@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.1.3
+
+- build: bump better-sqlite3-multiple-ciphers to 12.11.1 for Electron 43
+- chore: require better-sqlite3-multiple-ciphers ^12.9.0 for Electron 43
+
+
 ## v1.1.2
 
 - chore: drop transient peer:true flags from lock file
