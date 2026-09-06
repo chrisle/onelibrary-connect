@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.1.4
+
+- fix: the SQLite driver is built again under npm 12, which blocks install scripts by default
+- ci: OneLibrary connector releases reach npm again instead of failing on every push
+
+
 ## v1.1.3
 
 - build: bump better-sqlite3-multiple-ciphers to 12.11.1 for Electron 43
