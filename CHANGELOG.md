@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.1.5
+
+- ci: CI comes from the shared connector-ci workflows
+
+
 ## v1.1.4
 
 - fix: the SQLite driver is built again under npm 12, which blocks install scripts by default
