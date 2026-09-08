@@ -1,0 +1,14 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - '**'
+      - '!main'
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    uses: chrisle/connector-ci/.github/workflows/node-test.yml@main
