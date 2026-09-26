@@ -169,7 +169,7 @@ export class OneLibraryAdapter implements DatabaseAdapter {
     const track: Track = {
       id: row.content_id,
       title: row.title ?? '',
-      duration: row.length ? row.length / 1000 : 0, // ms to seconds
+      duration: row.length ?? 0,
       bitrate: row.bitrate ?? undefined,
       tempo: row.bpmx100 ? row.bpmx100 / 100 : 0,
       rating: row.rating ?? 0,

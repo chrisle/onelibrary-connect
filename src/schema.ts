@@ -17,7 +17,7 @@ export interface ContentRow {
   titleForSearch: string | null;
   subtitle: string | null;
   bpmx100: number | null; // BPM * 100 (e.g., 12800 = 128.00 BPM)
-  length: number | null; // Duration in milliseconds
+  length: number | null; // Duration in whole seconds
   trackNo: number | null;
   discNo: number | null;
 
