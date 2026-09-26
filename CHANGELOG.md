@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.1.6
+
+- fix: tracks read from a OneLibrary USB report their real length instead of a quarter of a second
+
+
 ## v1.1.5
 
 - ci: CI comes from the shared connector-ci workflows
